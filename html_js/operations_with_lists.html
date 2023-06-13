@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Operations With Lists</title>
+    <style>
+    body {
+      background-color: aliceblue;
+    }
+    h1 {
+      color: chocolate;
+    }
+
+    #operation {
+        margin-bottom: 10px;
+    }
+
+    #list {
+        margin-bottom: 10px;
+    }
+
+    #element {
+        margin-bottom: 10px
+    }
+
+    </style>
+</head>
+    <body>
+        <h1>Operations With Lists</h1>
+        <form id="operations_with_list-form">
+            <div id="list">
+                <label for="listInput">List:</label>
+                <span id="listContent"></span>
+            </div>
+            <div id="operation">
+                <label for="operation">Choose an operation:</label>
+                <select name="operation" id="operationInput">
+                    <option value="add">add element</option>
+                    <option value="delete">delete element</option>
+                    <option value="clean">clean list</option>
+                    <option value="search">search in list</option>
+                </select>
+            </div>
+            <div id="result">
+                <button type="button" onclick="modifyList()">Generate</button>
+            </div>
+            <div id="resultList"></div>
+            <br>
+            <button type="button" onclick="goToMenu()">Back to menu</button>
+        </form>
+
+    <script src="operations_with_lists.js"></script>
+    </body>
+</html>

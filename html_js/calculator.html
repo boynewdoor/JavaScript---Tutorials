@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <style>
+    body {
+      background-color: aliceblue;
+    }
+    h1 {
+      color: chocolate;
+    }
+
+    #number1 {
+      margin-bottom: 10px;
+    }
+
+    #number2 {
+      margin-bottom: 10px;
+    }
+
+    #operator {
+      margin-bottom: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Calculator</h1>
+  <form id="calculator-form">
+    <div id="number1">
+      <label for="x">Enter number 1:</label>
+      <input type="number" name="x" id="x" required>
+    </div>
+    <div id="number2">
+      <label for="y">Enter number 2:</label>
+      <input type="number" name="y" id="y" required>
+    </div>
+    <div id="operator">
+      <label for="operation">Choose an operation:</label>
+      <select name="operation" id="operation" required>
+        <option value="add">+</option>
+        <option value="subtract">-</option>
+        <option value="multiply">*</option>
+        <option value="divide">/</option>
+      </select>
+    </div>
+    <div id="result">
+        <button onclick="calculate()">Calculate</button>
+    </div>
+    <br>
+    <button type="button" onclick="goToMenu()">Back to menu</button>
+  </form>
+
+  <div id="output"></div>
+
+  <script src="calculator.js"></script>
+</body>
+</html>

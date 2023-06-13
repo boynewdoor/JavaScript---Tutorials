@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>String Comparator</title>
+  <style>
+    body {
+      background-color: aliceblue;
+    }
+    h1 {
+      color: chocolate;
+    }
+
+    #string1 {
+      margin-bottom: 10px;
+    }
+
+    #string2 {
+      margin-bottom: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>String Comparator</h1>
+  <form id="string_comparator-form">
+    <div id="string1">
+      <label for="x">Enter string 1:</label>
+      <input type="text" name="x" id="x" required>
+    </div>
+    <div id="string2">
+      <label for="y">Enter string 2:</label>
+      <input type="text" name="y" id="y" required>
+    </div>
+    <div id="result">
+        <button onclick="string_comparator()">Compare</button>
+    </div>
+    <br>
+    <button type="button" onclick="goToMenu()">Back to menu</button>
+  </form>
+
+  <div id="output"></div>
+
+  <script src="string_comparator.js"></script>
+</body>
+</html>

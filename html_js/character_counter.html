@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Character Counter</title>
+  <style>
+    body {
+      background-color: aliceblue;
+    }
+    h1 {
+      color: chocolate;
+    }
+
+    #character {
+      margin-bottom: 10px;
+    }
+
+    #string {
+      margin-bottom: 10px
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Character Counter</h1>
+  <form id="character_counter-form">
+    <div id="character">
+      <label for="x">Enter character:</label>
+      <input type="text" name="x" id="x" required>
+    </div>
+    <div id="string">
+      <label for="y">Enter string:</label>
+      <input type="text" name="y" id="y" required>
+    </div>
+    <div id="result">
+        <button onclick="character_counter()">Compare</button>
+    </div>
+    <br>
+    <button type="button" onclick="goToMenu()">Back to menu</button>
+  </form>
+
+  <div id="output"></div>
+
+<script src="character_counter.js"></script>
+</body>
+</html>

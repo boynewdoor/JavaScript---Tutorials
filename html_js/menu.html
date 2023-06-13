@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Menu</title>
+  <style>
+    body {
+      background-color: aliceblue;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a {
+      color: chocolate;
+    }
+
+    button {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 150px;
+    }
+
+    header {
+      background-color: #666;
+      padding: 15px;
+      text-align: center;
+      font-size: 15px;
+      color: white;
+    }
+
+    /* Style the footer */
+    footer {
+      background-color: #666;
+      padding: 15px;
+      text-align: center;
+      font-size: 15px;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Header</h1>
+  </header>
+  <div id="menu">
+    <button onclick="goToPage('calculator.html')">Calculator</button>
+    <button onclick="goToPage('string_comparator.html')">String Comparator</button>
+    <button onclick="goToPage('character_counter.html')">Character Counter</button>
+    <button onclick="goToPage('number_comparator.html')">Number Comparator</button>
+    <button onclick="goToPage('operations_with_lists.html')">Operations with Lists</button>
+    <button onclick="confirmQuit()">Quit</button>
+  </div>
+
+  <script>
+    function goToPage(pageUrl) {
+      window.location.href = pageUrl;
+    }
+
+    function confirmQuit() {
+      if (confirm("Are you sure you want to quit?")) {
+        window.location.href = "about:blank";
+      }
+    }
+  </script>
+
+  <footer>
+      <h1>Footer</h1>
+  </footer>
+</body>
+</html>
